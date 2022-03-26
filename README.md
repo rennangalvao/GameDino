@@ -8,6 +8,6 @@ JS, HTML e CSS.
 
 
 * Exemplo *
-<div align="center">
+<div>
   <img src="https://github.com/rennangalvao/GameDino/blob/main/asset/img/example.png" />
 </div>
