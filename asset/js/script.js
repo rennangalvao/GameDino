@@ -1,14 +1,20 @@
 const dino = document.querySelector('.dino');
+const background = document.querySelector('.background');
+
+let isJumping = false;
 
 
 function handleKeyUp() {
     
     if (event.keyCode === 32) {
-        console.log('Pressionou espaço!');
-        jump();
+        if (!isJumping) {
+            //console.log('Pressionou espaço!');
+            jump();
+        }
     }
 }
 
+// função jumper
 function jump() {
     let position = 0;
   
@@ -21,7 +27,7 @@ function jump() {
         let downInterval = setInterval(() => {
             if (position <= 0) {
             clearInterval(downInterval);
-
+            isJumping = false;
             
             } else {
             position -= 20;
@@ -38,6 +44,17 @@ function jump() {
         }
     }, 20);
 }
-  
+
+function createCactus() {
+    const cactus = document.createElement('div');
+    let cactusPosition = 1000;
+
+    cactus.classList.add('cactus');
+    cactus.style.left = 1000 + 'px';
+    background.appendChild(cactus);
+
+}
+
+createCactus();
 document.addEventListener('keyup', handleKeyUp);
 
