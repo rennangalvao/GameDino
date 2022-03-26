@@ -59,7 +59,7 @@ function createCactus() {
   
     let leftTimer = setInterval(() => {
         if (cactusPosition < -60) {
-
+ 
             // Saiu da tela
             clearInterval(leftTimer);
             background.removeChild(cactus);
@@ -68,7 +68,8 @@ function createCactus() {
             // Game over
             clearInterval(leftTimer);
             isGameOver = true;
-            document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
+            document.body.innerHTML = '<h1 class="game-over">Fim de jogo <br> Pressione F5</h1>';
+            
 
         }else {
             cactusPosition -= 10;
