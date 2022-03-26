@@ -8,4 +8,4 @@ js, HTML e CSS.
 
 <div>
 <img src="https://github.com/rennangalvao/GameDino/issues/1#issue-1181473796" />
-</di>
+</div>
