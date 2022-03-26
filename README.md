@@ -6,4 +6,6 @@ js, HTML e CSS.
 # Digital Innovation One
 
 
-![screenshot](example.png?raw=true "screenshot")
+<div align="center">
+  <img src="https://github.com/rennangalvao/GameDino/blob/main/asset/img/example.png" />
+</div>
